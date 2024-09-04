@@ -82,6 +82,20 @@ function getAge(arrayOfObjects){
             }
             
        return newNameCity;
-        }   
-module.exports = { getEmail, getHobby, getNames, getNameCity, getAge};
+    }   
+
+// Question -6
+
+function getFirstHobby(arrayOfObjects){
+
+    const hobbylist =[]
+        for (let i = 0; i < arrayOfObjects.length; i++) {
+
+            hobbylist.push(arrayOfObjects[i].hobbies[0] );
+            }
+            
+       return hobbylist;
+    }
+
+module.exports = { getEmail, getHobby, getNames, getNameCity, getAge, getFirstHobby};
         
