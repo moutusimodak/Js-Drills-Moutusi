@@ -1,7 +1,5 @@
-const arrayOfObjects = require('./persons.js');
-
 //  Question -1
-function getEmail(){
+function getEmail(arrayOfObjects){
 
     const emails =[]
         for (let i = 0; i < arrayOfObjects.length; i++) {   
@@ -13,7 +11,7 @@ function getEmail(){
 
 
 // Question -2
-function getHobby(age){
+function getHobby(arrayOfObjects, age){
     if (age === undefined || age === null) {
         return "Please enter an age.";
     }
@@ -34,9 +32,22 @@ function getHobby(age){
        
        return hobby;
     }
+
+
+// Question -3
+
+function getNames(arrayOfObjects){
+    const newnames =[]
+    for (let i = 0; i < arrayOfObjects.length; i++) {
+        
+        if(arrayOfObjects[i].isStudent === true && arrayOfObjects[i].country ==='Australia'){
+            newnames.push(arrayOfObjects[i].name);
+        }  
+    }
+    return newnames;
+}    
         
 
     
-module.exports = { getEmail, getHobby
+module.exports = { getEmail, getHobby, getNames};
         
-};
