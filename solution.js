@@ -72,6 +72,16 @@ function getNameCity(arrayOfObjects, index){
        return newNameCity;
     }
 
-    
-module.exports = { getEmail, getHobby, getNames, getNameCity};
+// Question -5
+function getAge(arrayOfObjects){
+
+    const newNameCity =[]
+        for (let i = 0; i < arrayOfObjects.length; i++) {
+
+                newNameCity.push(arrayOfObjects[i].age );
+            }
+            
+       return newNameCity;
+        }   
+module.exports = { getEmail, getHobby, getNames, getNameCity, getAge};
         

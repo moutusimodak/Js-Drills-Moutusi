@@ -1,5 +1,5 @@
 const arrayOfObjects = require('./persons');
-const {getEmail,getHobby,getNames, getNameCity} = require("./solution")
+const {getEmail,getHobby,getNames, getNameCity, getAge} = require("./solution")
 
 
 const emails = getEmail(arrayOfObjects);
@@ -15,3 +15,8 @@ const nameList = names.join('\n');
 
 const value = getNameCity(arrayOfObjects,3);
 console.log(`${value}`);
+
+
+const ages = getAge(arrayOfObjects);
+const ageList = ages.join('\n');
+console.log(`The ages of all individuals are  - ${ageList}`);
