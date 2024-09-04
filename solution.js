@@ -38,13 +38,23 @@ function getHobby( age){
 
 // Question -3
 
-function getNames(){
+function getNames(Country){
+
+    if (typeof Country !== 'string') {
+        return `Invalid country parameter`;
+    }
+
     const newnames =[]
+    let found = false;
     for (let i = 0; i < arrayOfObjects.length; i++) {
         
-        if(arrayOfObjects[i].isStudent === true && arrayOfObjects[i].country ==='Australia'){
+        if(arrayOfObjects[i].isStudent === true && arrayOfObjects[i].country ===Country){
             newnames.push(arrayOfObjects[i].name);
+            found = true;
         }  
+    }
+    if (!found) {
+        return `No data found in this name `;
     }
     return newnames;
 }    
