@@ -26,8 +26,8 @@ const hobbyList = hobies.join('\n');
 console.log(`The first hobby of all individuals are  - ${hobbyList}`);
 
 
-// const nameemailList = getNameEmail(25);
-// console.log(nameemailList)
+const nameemailList = getNameEmail(25);
+console.log(nameemailList)
 
 
 

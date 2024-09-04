@@ -115,13 +115,21 @@ function getFirstHobby(){
 
 // question -7
 function getNameEmail(age) {
+    if (age === undefined || age === null) {
+        return "Please enter an age";
+    }
+   
+    let f = false
     const nameemailList=[]
     for (let i = 0; i < arrayOfObjects.length; i++) {
         if(arrayOfObjects[i].age === age){
             nameemailList.push("the names are - "+arrayOfObjects[i].name ,"and the emails are - "+arrayOfObjects[i].email);
-           
+           f=true
         }
         
+    }
+    if (!f) {
+        return "No age found";
     }
     return nameemailList;
 }   
