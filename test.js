@@ -21,9 +21,9 @@ console.log(`The names  are  - ${nameList}`);
 // //console.log(`The ages of all individuals are  - ${ageList}`);
 
 
-// const hobies = getFirstHobby(arrayOfObjects);
-// const hobbyList = hobies.join('\n');
-// //console.log(`The first hobby of all individuals are  - ${hobbyList}`);
+const hobies = getFirstHobby(arrayOfObjects);
+const hobbyList = hobies.join('\n');
+console.log(`The first hobby of all individuals are  - ${hobbyList}`);
 
 
 // const nameemailList = getNameEmail(25);

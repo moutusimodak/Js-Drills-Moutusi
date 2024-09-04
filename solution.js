@@ -103,8 +103,12 @@ function getFirstHobby(){
     const hobbylist =[]
         for (let i = 0; i < arrayOfObjects.length; i++) {
 
-            hobbylist.push(arrayOfObjects[i].hobbies[0] );
+            if (arrayOfObjects[i].hobbies.length > 0) {
+                hobbylist.push(arrayOfObjects[i].hobbies[0]);
+            } else {
+                hobbylist.push("No hobbies available");
             }
+        }
             
        return hobbylist;
     }
