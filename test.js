@@ -6,14 +6,14 @@ const emails = getEmail(arrayOfObjects);
 const emailList = emails.join('\n');
 //console.log(`The email address of all individuals are - ${emailList}`);
 
-const hobby = getHobby(arrayOfObjects,33);
-//console.log(`${hobby}`);
+const hobby = getHobby(28);
+console.log(`${hobby}`);
 
 const names = getNames(arrayOfObjects);
 const nameList = names.join('\n');
-//console.log(`The names  are  - ${nameList}`);
+console.log(`The names  are  - ${nameList}`);
 
-const value = getNameCity(arrayOfObjects,3);
+const value = getNameCity(3);
 //console.log(`${value}`);
 
 
@@ -27,6 +27,6 @@ const hobbyList = hobies.join('\n');
 //console.log(`The first hobby of all individuals are  - ${hobbyList}`);
 
 
-const nameemailList = getNameEmail(arrayOfObjects, 25);
+const nameemailList = getNameEmail(25);
 console.log(nameemailList)
 

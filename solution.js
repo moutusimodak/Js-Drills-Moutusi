@@ -1,5 +1,7 @@
+const arrayOfObjects = require('./persons.js');
+
 //  Question -1
-function getEmail(arrayOfObjects){
+function getEmail(){
 
     const emails =[]
         for (let i = 0; i < arrayOfObjects.length; i++) {   
@@ -11,7 +13,7 @@ function getEmail(arrayOfObjects){
 
 
 // Question -2
-function getHobby(arrayOfObjects, age){
+function getHobby( age){
     if (age === undefined || age === null) {
         return "Please enter an age.";
     }
@@ -36,7 +38,7 @@ function getHobby(arrayOfObjects, age){
 
 // Question -3
 
-function getNames(arrayOfObjects){
+function getNames(){
     const newnames =[]
     for (let i = 0; i < arrayOfObjects.length; i++) {
         
@@ -49,7 +51,7 @@ function getNames(arrayOfObjects){
    
 
 // Question - 4    
-function getNameCity(arrayOfObjects, index){
+function getNameCity(index){
     if (index === undefined || index === null) {
         return "Please enter an index";
     }
@@ -73,7 +75,7 @@ function getNameCity(arrayOfObjects, index){
     }
 
 // Question -5
-function getAge(arrayOfObjects){
+function getAge(){
 
     const newNameCity =[]
         for (let i = 0; i < arrayOfObjects.length; i++) {
@@ -86,7 +88,7 @@ function getAge(arrayOfObjects){
 
 // Question -6
 
-function getFirstHobby(arrayOfObjects){
+function getFirstHobby(){
 
     const hobbylist =[]
         for (let i = 0; i < arrayOfObjects.length; i++) {
@@ -98,7 +100,7 @@ function getFirstHobby(arrayOfObjects){
     }
 
 // question -7
-function getNameEmail(arrayOfObjects, age) {
+function getNameEmail(age) {
     const nameemailList=[]
     for (let i = 0; i < arrayOfObjects.length; i++) {
         if(arrayOfObjects[i].age === age){
